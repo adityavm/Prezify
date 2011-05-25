@@ -1,0 +1,45 @@
+/* demo styles */
+body		{ font-family:palatino,serif; }
+
+/* prezify styles
+   adapted from http://d.pr/v1fS */
+body		{ overflow-y: hidden; }
+ul.prezify	{  }
+ul.prezify li	{ 
+	list-style:none;position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	text-align: center;
+	-webkit-transform: translateY(100%) translateZ(0);
+	-webkit-transition: -webkit-transform 1s;
+	height:100%; width:100%;
+	margin:0 auto;
+	display:table;
+	font-size:30pt;
+}
+
+ul.prezify li.curr {
+	-webkit-transform: translateY(0) translateZ(0);
+}
+
+ul.prezify li.prev {
+	-webkit-transform: translateY(-100%) translateZ(0);
+}
+
+ul.prezify li div {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+ul.prezify li.large {
+	font-size:50pt;
+}
+
+ul.prezify li.small {
+	font-size:10pt;
+}
+
+ul.prezify li.black {
+	background-color:#222;
+	color:#eee;
+	font-style:italic;
+}
